@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star in the Sky!</title>
+</head>
+<body>
+
+<script>
+    let arrStar = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrConstellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+    function searchStar(star) {
+        for (let i = 0; i < arrStar.length; i++) {
+            if (star == arrStar[i]) {
+                alert(arrStar[i] + " thuoc chom sao "+ arrConstellation[i]);
+                break;
+            }
+            if (i == arrStar.length - 1) {
+                alert("Khong tim thay ten ngoi sao.")
+            }
+        }
+    }
+
+    let stars = prompt("Nhap ten ngoi sao: ");
+    searchStar(stars);
+</script>
+
+</body>
+</html>
